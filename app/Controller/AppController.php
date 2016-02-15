@@ -55,6 +55,9 @@ class AppController extends Controller {
           'controller' => 'users',
           'action' => 'login'
         );
+        $this->loadModel('Cart');
+     
+        $this->set('count',$this->Cart->getCount());
 //        $this->Auth->logoutRedirect = array(
 //          'controller' => 'users',
 //          'action' => 'login'

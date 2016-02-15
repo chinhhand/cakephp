@@ -17,23 +17,32 @@
 $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
 $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 ?>
+1
+2
+<?php echo $this->Html->link('<span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart <span class="badge" id="cart-counter">'.$count.'</span>',
+            array('controller'=>'carts','action'=>'view'),array('escape'=>false));?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
+                Cakephp Shopping Cart
 		<?php echo $cakeDescription ?>:
 		<?php echo $this->fetch('title'); ?>
+                
+                
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
-
+                echo $this->Html->css('bootstrap.min.css');
 		echo $this->Html->css('cake.generic');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -58,6 +67,33 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			</p>
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+    
+     
+    <nav class="navbar navbar-default" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">CakePHP Shopping Cart</a>
+      </div>
+     
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <?php echo $this->Html->link('<span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart <span class="badge" id="cart-counter">0</span>',
+                                        array('controller'=>'carts','action'=>'view'),array('escape'=>false));?>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+     
+    <?php echo $this->fetch('content'); ?>
+    <?php echo $this->element('sql_dump'); ?>
+    <?php echo $this->Html->script('bootstrap.min')?>
 </body>
 </html>

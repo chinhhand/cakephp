@@ -6,14 +6,17 @@
  * and open the template in the editor.
  */
 class CategoriesController extends AppController{
+    var $components = array('Session');
     var $name='Categories';
     var $component=array('Session');
+    
     public function index()
     {
         
-       $this->set('Categories',  $this->Category->find("all"));
-       
+        $this->set('Categories',  $this->Category->find("all"));
+   
         $this->set('list_cat',$this->_find_list());
+        
        
    
     }
@@ -96,7 +99,11 @@ class CategoriesController extends AppController{
         $this->redirect(array('action'=>'index'), NULL, true);
     }
     function _find_list() {
-        return $this->Category->generateTreeList();
+        if($this->Category->Behaviors->loaded('Tree') != true){
+            return $this->Category->Behaviors->load('Tree');
+         }
+        return $this->Category->generateTreeList(null, null, null, 
+'&nbsp;&nbsp;&nbsp;'); 
     }
 }
 

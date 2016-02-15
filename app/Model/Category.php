@@ -8,6 +8,8 @@
 class Category extends AppModel{
     public $actAs = array('tree');
     public $name='category';
+    public $userTable='categories';
+    public $primaryKey='id';
     public  $displayField='name';
     var $validate=array(
         'name'=>array(
@@ -21,10 +23,10 @@ class Category extends AppModel{
             ),
         ),
     );
-    public  $belongTo=array(
-        'perentCat'=>array(
-            'classname'=>'Category',    
-            'foreignkey'=>'parent_id'
+    var $belongsTo = array(
+        'ParentCat' => array(
+            'className' => 'Category',
+            'foreignKey' => 'parent_id'
         )
     );
 }

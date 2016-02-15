@@ -1681,3 +1681,1268 @@ Stack Trace:
 #11 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
 #12 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2016-02-02 08:12:52 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /cakephp/categories/
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Category))
+#5 E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php(99): Model->__call('generateTreeLis...', Array)
+#6 E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php(99): Category->generateTreeList()
+#7 E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php(16): CategoriesController->_find_list()
+#8 [internal function]: CategoriesController->index()
+#9 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#10 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#12 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-02-02 08:31:56 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /cakephp/categories/
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Category))
+#5 E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php(100): Model->__call('generateTreeLis...', Array)
+#6 E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php(100): Category->generateTreeList()
+#7 E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php(16): CategoriesController->_find_list()
+#8 [internal function]: CategoriesController->index()
+#9 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#10 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#12 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-02-02 08:36:45 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 87]
+2016-02-02 08:36:45 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/movedown
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 87, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 87, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 08:37:36 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 31]
+2016-02-02 08:37:36 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 31)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 31, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 31, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 08:42:18 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 31]
+2016-02-02 08:42:18 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 31)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 31, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 31, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 08:47:05 Error: [MissingViewException] View file "Categories\edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Categories\\edit.ctp',
+)
+Request URL: /cakephp/categories/edit
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#4 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-02-02 08:56:21 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 66]
+2016-02-02 08:56:21 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/moveup
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 66)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 66, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 66, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 09:19:44 Error: [MissingViewException] View file "Categories\edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Categories\\edit.ctp',
+)
+Request URL: /cakephp/categories/edit
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#4 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-02-02 09:33:56 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 31]
+2016-02-02 09:33:56 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 31)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 31, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 31, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 09:35:33 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 31]
+2016-02-02 09:35:33 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 31)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 31, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 31, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 09:35:42 Error: [MissingViewException] View file "Categories\edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Categories\\edit.ctp',
+)
+Request URL: /cakephp/categories/edit
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#4 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-02-02 09:35:51 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'removeFromTree' at line 1
+Request URL: /cakephp/categories/detele
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('removeFromTree', Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('removeFromTree', Array, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(612): DboSource->fetchAll('removeFromTree', Array, Array)
+#4 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(827): DboSource->query('removeFromTree', Array, Object(Category))
+#5 E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php(58): Model->__call('removeFromTree', Array)
+#6 E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php(58): Category->removeFromTree(NULL, true)
+#7 [internal function]: CategoriesController->detele()
+#8 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#9 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#11 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-02-02 10:29:01 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 27]
+2016-02-02 10:29:01 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 10:31:32 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 66]
+2016-02-02 10:31:32 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/moveup/26
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 66)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 66, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 66, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 10:31:36 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 27]
+2016-02-02 10:31:36 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 10:32:50 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 27]
+2016-02-02 10:32:50 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 10:34:36 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 27]
+2016-02-02 10:34:36 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 10:40:50 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 27]
+2016-02-02 10:40:50 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 10:41:46 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 66]
+2016-02-02 10:41:46 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/moveup/30
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 66)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 66, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 66, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 10:41:49 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 87]
+2016-02-02 10:41:49 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/movedown/30
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 87, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 87, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 10:41:55 Error: [MissingActionException] Action CategoriesController::detele30() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'detele30',
+)
+Request URL: /cakephp/categories/detele30
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#2 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-02-02 10:58:26 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 35]
+2016-02-02 10:58:26 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 35)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 35, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 35, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 11:00:23 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /cakephp/categories/
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Category))
+#5 E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php(21): Model->__call('generateTreeLis...', Array)
+#6 E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php(21): Category->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: CategoriesController->index()
+#8 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#9 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#11 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-02-02 11:00:45 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /cakephp/categories/
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Category))
+#5 E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php(21): Model->__call('generateTreeLis...', Array)
+#6 E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php(21): Category->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: CategoriesController->index()
+#8 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#9 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#11 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-02-02 11:05:26 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 27]
+2016-02-02 11:05:26 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 11:20:00 Error: [MissingActionException] Action CategoriesController::detele32() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'detele32',
+)
+Request URL: /cakephp/categories/detele32
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#2 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-02-02 11:21:57 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /cakephp/categories/
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Category))
+#5 E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php(101): Model->__call('generateTreeLis...', Array)
+#6 E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php(101): Category->generateTreeList()
+#7 E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php(16): CategoriesController->_find_list()
+#8 [internal function]: CategoriesController->index()
+#9 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#10 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#12 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-02-02 11:28:08 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 66]
+2016-02-02 11:28:08 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/moveup/32
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 66)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 66, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 66, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 11:28:11 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 87]
+2016-02-02 11:28:11 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/movedown/32
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 87, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 87, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 11:36:56 Error: [MissingActionException] Action CategoriesController::edit32() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'edit32',
+)
+Request URL: /cakephp/categories/edit32
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#2 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-02-02 11:37:07 Error: [MissingActionException] Action CategoriesController::detele32() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'detele32',
+)
+Request URL: /cakephp/categories/detele32
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#2 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-02-02 11:37:15 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 66]
+2016-02-02 11:37:15 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/moveup/32
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 66)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 66, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 66, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 12:11:18 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 27]
+2016-02-02 12:11:18 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 12:11:59 Error: [MissingActionException] Action CategoriesController::edit32() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'edit32',
+)
+Request URL: /cakephp/categories/edit32
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#2 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-02-02 12:21:28 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 87]
+2016-02-02 12:21:28 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/movedown/33
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 87, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 87, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 12:21:32 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 66]
+2016-02-02 12:21:32 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/moveup/33
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 66)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 66, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 66, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-02 12:22:05 Error: [MissingActionException] Action CategoriesController::detele33() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'detele33',
+)
+Request URL: /cakephp/categories/detele33
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#2 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-02-03 07:35:56 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 27]
+2016-02-03 07:35:56 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-03 07:37:08 Error: [MissingActionException] Action CategoriesController::edit33() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'edit33',
+)
+Request URL: /cakephp/categories/edit33
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#2 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-02-03 07:39:45 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 87]
+2016-02-03 07:39:45 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/movedown/33
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 87, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 87, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-03 07:39:52 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 27]
+2016-02-03 07:39:52 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-03 07:41:45 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 27]
+2016-02-03 07:41:45 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-03 08:07:44 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CategoriesController.php, line 87]
+2016-02-03 08:07:44 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/categories/movedown/33
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 87, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 87, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-03 08:09:30 Error: [MissingActionException] Action CategoriesController::edit33() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'edit33',
+)
+Request URL: /cakephp/categories/edit33
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#2 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-02-03 08:52:33 Error: [MissingActionException] Action CategoriesController::edit41() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'edit41',
+)
+Request URL: /cakephp/categories/edit41
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#2 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-02-03 09:37:42 Error: [MissingActionException] Action CategoriesController::detele52() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'detele52',
+)
+Request URL: /cakephp/categories/detele52
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#2 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-02-03 10:03:43 Error: [MissingActionException] Action CategoriesController::detele53() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'detele53',
+)
+Request URL: /cakephp/categories/detele53
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#2 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-02-03 11:21:09 Error: [MissingActionException] Action CategoriesController::edit57() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'edit57',
+)
+Request URL: /cakephp/categories/edit57
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#2 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-02-04 08:20:28 Error: [MissingControllerException] Controller class CartsController could not be found.
+Exception Attributes: array (
+  'class' => 'CartsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/carts/view
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 08:45:29 Error: [MissingControllerException] Controller class CartsController could not be found.
+Exception Attributes: array (
+  'class' => 'CartsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/carts/view
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:10:20 Error: [MissingControllerException] Controller class CartsController could not be found.
+Exception Attributes: array (
+  'class' => 'CartsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/carts/view
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:10:43 Error: [MissingControllerException] Controller class CartsController could not be found.
+Exception Attributes: array (
+  'class' => 'CartsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/carts/view
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:12:08 Error: [MissingControllerException] Controller class CartsController could not be found.
+Exception Attributes: array (
+  'class' => 'CartsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/carts/view
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:12:49 Error: [MissingControllerException] Controller class ProductController could not be found.
+Exception Attributes: array (
+  'class' => 'ProductController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/product
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:12:52 Error: [MissingViewException] View file "Products\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Products\\index.ctp',
+)
+Request URL: /cakephp/products
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#4 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-02-04 09:13:35 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/img/s4.jpg
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:13:35 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/img/comment.jpg
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:13:35 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/img/s4.jpg
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:13:35 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/img/note3.jpg
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:15:13 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/img/comment.jpg
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:15:13 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/img/s4.jpg
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:15:13 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/img/note3.jpg
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:31:29 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/img/s4.jpg
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:31:29 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/img/comment.jpg
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:31:29 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/img/note3.jpg
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:31:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/img/s4.jpg
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:31:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/img/comment.jpg
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:33:39 Error: Fatal Error (4): syntax error, unexpected '?>' in [E:\xampp\htdocs\cakephp\app\View\Products\index.ctp, line 8]
+2016-02-04 09:33:39 Error: [FatalErrorException] syntax error, unexpected '?>'
+Request URL: /cakephp/products
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 8, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 8, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-04 09:34:02 Error: Fatal Error (4): syntax error, unexpected '?>' in [E:\xampp\htdocs\cakephp\app\View\Products\index.ctp, line 8]
+2016-02-04 09:34:02 Error: [FatalErrorException] syntax error, unexpected '?>'
+Request URL: /cakephp/products
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 8, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 8, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-04 09:34:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/img/s4.jpg
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:34:21 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/img/note3.jpg
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:34:21 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/img/s4.jpg
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:34:21 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/img/comment.jpg
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:34:33 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/img/s4.jpg
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:34:33 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/img/comment.jpg
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:34:33 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/img/note3.jpg
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:34:33 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/img/s4.jpg
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:45:39 Error: [MissingControllerException] Controller class CartsController could not be found.
+Exception Attributes: array (
+  'class' => 'CartsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/carts/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 09:50:48 Error: Fatal Error (4): syntax error, unexpected ')', expecting '(' in [E:\xampp\htdocs\cakephp\app\View\Products\view.ctp, line 1]
+2016-02-04 09:50:48 Error: [FatalErrorException] syntax error, unexpected ')', expecting '('
+Request URL: /cakephp/products/view/1
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 1)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 1, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 1, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-04 10:02:06 Error: [MissingControllerException] Controller class CartsController could not be found.
+Exception Attributes: array (
+  'class' => 'CartsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/carts/view
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 10:04:11 Error: [MissingControllerException] Controller class CartsController could not be found.
+Exception Attributes: array (
+  'class' => 'CartsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/carts/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 10:12:39 Error: [MissingControllerException] Controller class CartsController could not be found.
+Exception Attributes: array (
+  'class' => 'CartsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/carts/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 10:14:00 Error: [MissingControllerException] Controller class CartsController could not be found.
+Exception Attributes: array (
+  'class' => 'CartsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/carts/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 10:14:12 Error: [MissingControllerException] Controller class CartsController could not be found.
+Exception Attributes: array (
+  'class' => 'CartsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/carts/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 10:14:50 Error: [MissingControllerException] Controller class CartsController could not be found.
+Exception Attributes: array (
+  'class' => 'CartsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/carts/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 10:17:27 Error: [MissingControllerException] Controller class CartsController could not be found.
+Exception Attributes: array (
+  'class' => 'CartsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/carts/add
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 10:26:02 Error: [MissingControllerException] Controller class CartsController could not be found.
+Exception Attributes: array (
+  'class' => 'CartsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/carts/view
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-02-04 11:55:52 Error: [MissingTableException] Table carts for model Cart was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'carts',
+  'class' => 'Cart',
+  'ds' => 'default',
+)
+Request URL: /cakephp/products/view/1
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3653): Model->setSource('carts')
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#2 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Cart', 'fields')
+#4 E:\xampp\htdocs\cakephp\app\View\Products\view.ctp(11): FormHelper->create('Cart', Array)
+#5 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(971): include('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(933): View->_evaluate('E:\\xampp\\htdocs...', Array)
+#7 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(473): View->_render('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#9 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#10 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-02-04 11:57:33 Error: [MissingTableException] Table carts for model Cart was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'carts',
+  'class' => 'Cart',
+  'ds' => 'default',
+)
+Request URL: /cakephp/products/view/1
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3653): Model->setSource('carts')
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#2 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Cart', 'fields')
+#4 E:\xampp\htdocs\cakephp\app\View\Products\view.ctp(11): FormHelper->create('Cart', Array)
+#5 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(971): include('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(933): View->_evaluate('E:\\xampp\\htdocs...', Array)
+#7 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(473): View->_render('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#9 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#10 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-02-04 12:00:12 Error: [MissingTableException] Table carts for model Cart was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'carts',
+  'class' => 'Cart',
+  'ds' => 'default',
+)
+Request URL: /cakephp/products/view/1
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3653): Model->setSource('carts')
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#2 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Cart', 'fields')
+#4 E:\xampp\htdocs\cakephp\app\View\Products\view.ctp(11): FormHelper->create('Cart', Array)
+#5 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(971): include('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(933): View->_evaluate('E:\\xampp\\htdocs...', Array)
+#7 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(473): View->_render('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#9 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#10 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-02-15 07:24:09 Error: [MissingActionException] Action CartsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'CartsController',
+  'action' => 'view',
+)
+Request URL: /cakephp/carts/view
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CartsController), Object(CakeRequest))
+#2 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-02-15 07:24:29 Error: [MissingActionException] Action CartsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'CartsController',
+  'action' => 'view',
+)
+Request URL: /cakephp/carts/view
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CartsController), Object(CakeRequest))
+#2 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-02-15 07:25:00 Error: [MissingTableException] Table carts for model Cart was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'carts',
+  'class' => 'Cart',
+  'ds' => 'default',
+)
+Request URL: /cakephp/products/view/2
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3653): Model->setSource('carts')
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#2 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Cart', 'fields')
+#4 E:\xampp\htdocs\cakephp\app\View\Products\view.ctp(11): FormHelper->create('Cart', Array)
+#5 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(971): include('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(933): View->_evaluate('E:\\xampp\\htdocs...', Array)
+#7 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(473): View->_render('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#9 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#10 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-02-15 07:31:00 Error: [MissingTableException] Table carts for model Cart was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'carts',
+  'class' => 'Cart',
+  'ds' => 'default',
+)
+Request URL: /cakephp/products/view/2
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3653): Model->setSource('carts')
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#2 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Cart', 'fields')
+#4 E:\xampp\htdocs\cakephp\app\View\Products\view.ctp(11): FormHelper->create('Cart', Array)
+#5 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(971): include('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(933): View->_evaluate('E:\\xampp\\htdocs...', Array)
+#7 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(473): View->_render('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#9 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#10 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-02-15 07:31:09 Error: [MissingTableException] Table carts for model Cart was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'carts',
+  'class' => 'Cart',
+  'ds' => 'default',
+)
+Request URL: /cakephp/products/view/2
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3653): Model->setSource('carts')
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#2 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Cart', 'fields')
+#4 E:\xampp\htdocs\cakephp\app\View\Products\view.ctp(11): FormHelper->create('Cart', Array)
+#5 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(971): include('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(933): View->_evaluate('E:\\xampp\\htdocs...', Array)
+#7 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(473): View->_render('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#9 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#10 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-02-15 07:39:36 Error: [MissingTableException] Table carts for model Cart was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'carts',
+  'class' => 'Cart',
+  'ds' => 'default',
+)
+Request URL: /cakephp/products/view/2
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3653): Model->setSource('carts')
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#2 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Cart', 'fields')
+#4 E:\xampp\htdocs\cakephp\app\View\Products\view.ctp(11): FormHelper->create('Cart', Array)
+#5 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(971): include('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(933): View->_evaluate('E:\\xampp\\htdocs...', Array)
+#7 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(473): View->_render('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#9 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#10 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-02-15 07:40:56 Error: [MissingTableException] Table carts for model Cart was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'carts',
+  'class' => 'Cart',
+  'ds' => 'default',
+)
+Request URL: /cakephp/products/view/2
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3653): Model->setSource('carts')
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#2 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Cart', 'fields')
+#4 E:\xampp\htdocs\cakephp\app\View\Products\view.ctp(12): FormHelper->create('Cart', Array)
+#5 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(971): include('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(933): View->_evaluate('E:\\xampp\\htdocs...', Array)
+#7 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(473): View->_render('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#9 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#10 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-02-15 07:50:52 Error: [MissingTableException] Table carts for model Cart was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'carts',
+  'class' => 'Cart',
+  'ds' => 'default',
+)
+Request URL: /cakephp/products/view/1
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3653): Model->setSource('carts')
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#2 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Cart', 'fields')
+#4 E:\xampp\htdocs\cakephp\app\View\Products\view.ctp(12): FormHelper->create('Cart', Array)
+#5 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(971): include('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(933): View->_evaluate('E:\\xampp\\htdocs...', Array)
+#7 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(473): View->_render('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#9 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#10 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-02-15 07:54:03 Error: [MissingTableException] Table carts for model Cart was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'carts',
+  'class' => 'Cart',
+  'ds' => 'default',
+)
+Request URL: /cakephp/products/view/1
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3653): Model->setSource('carts')
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#2 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Cart', 'fields')
+#4 E:\xampp\htdocs\cakephp\app\View\Products\view.ctp(12): FormHelper->create('Cart', Array)
+#5 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(971): include('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(933): View->_evaluate('E:\\xampp\\htdocs...', Array)
+#7 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(473): View->_render('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#9 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#10 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-02-15 07:54:29 Error: [MissingTableException] Table carts for model Cart was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'carts',
+  'class' => 'Cart',
+  'ds' => 'default',
+)
+Request URL: /cakephp/products/view/2
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3653): Model->setSource('carts')
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#2 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Cart', 'fields')
+#4 E:\xampp\htdocs\cakephp\app\View\Products\view.ctp(12): FormHelper->create('Cart', Array)
+#5 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(971): include('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(933): View->_evaluate('E:\\xampp\\htdocs...', Array)
+#7 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(473): View->_render('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#9 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#10 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-02-15 07:59:02 Error: [MissingTableException] Table carts for model Cart was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'carts',
+  'class' => 'Cart',
+  'ds' => 'default',
+)
+Request URL: /cakephp/products/view/1
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3653): Model->setSource('carts')
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#2 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Cart', 'fields')
+#4 E:\xampp\htdocs\cakephp\app\View\Products\view.ctp(27): FormHelper->create('Cart', Array)
+#5 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(971): include('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(933): View->_evaluate('E:\\xampp\\htdocs...', Array)
+#7 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(473): View->_render('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#9 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#10 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-02-15 08:00:48 Error: [MissingTableException] Table carts for model Cart was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'carts',
+  'class' => 'Cart',
+  'ds' => 'default',
+)
+Request URL: /cakephp/products/view/1
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3653): Model->setSource('carts')
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#2 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Cart', 'fields')
+#4 E:\xampp\htdocs\cakephp\app\View\Products\view.ctp(27): FormHelper->create('Cart', Array)
+#5 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(971): include('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(933): View->_evaluate('E:\\xampp\\htdocs...', Array)
+#7 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(473): View->_render('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#9 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#10 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-02-15 08:02:13 Error: [MissingTableException] Table carts for model Cart was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'carts',
+  'class' => 'Cart',
+  'ds' => 'default',
+)
+Request URL: /cakephp/products/view/1
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3653): Model->setSource('carts')
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#2 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 E:\xampp\htdocs\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Cart', 'fields')
+#4 E:\xampp\htdocs\cakephp\app\View\Products\view.ctp(27): FormHelper->create('Cart', Array)
+#5 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(971): include('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(933): View->_evaluate('E:\\xampp\\htdocs...', Array)
+#7 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(473): View->_render('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#9 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#10 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-02-15 08:04:44 Error: Fatal Error (1): Call to a member function read() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CartsController.php, line 20]
+2016-02-15 08:04:44 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /cakephp/carts/view
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 20, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 20, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-15 08:06:48 Error: Fatal Error (1): Call to a member function read() on a non-object in [E:\xampp\htdocs\cakephp\app\Controller\CartsController.php, line 20]
+2016-02-15 08:06:48 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /cakephp/carts/view
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 20, Array)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 20, Array)
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-02-15 08:08:55 Error: [MissingViewException] View file "Carts\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Carts\\view.ctp',
+)
+Request URL: /cakephp/carts/view
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CartsController), Object(CakeRequest))
+#4 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-02-15 08:10:22 Error: [MissingViewException] View file "Carts\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Carts\\view.ctp',
+)
+Request URL: /cakephp/carts/view
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CartsController), Object(CakeRequest))
+#4 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-02-15 08:14:10 Error: [MissingActionException] Action CartsController::update() could not be found.
+Exception Attributes: array (
+  'controller' => 'CartsController',
+  'action' => 'update',
+)
+Request URL: /cakephp/carts/update
+Stack Trace:
+#0 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CartsController), Object(CakeRequest))
+#2 E:\xampp\htdocs\cakephp\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
