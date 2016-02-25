@@ -4,6 +4,7 @@ class TemplatesController extends AppController {
     var $helpers = array("Html","Common"); // Thành phần Helper Common được gọi để tạo menu,header,footer trong view
  
     function  index(){
+        
         $this->set('title_for_layout', 'Templates By QHOTeam');
         $this->set("content","QHO Team");
     }

@@ -10,7 +10,7 @@ App::uses('AuthComponent', 'Controller/Component');
 App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 class User extends AppModel{
     public $belongsTo=array('Group');
-//    public $actsAs=array('Acl'=>array('type'=>'requester'),'enabled'=>false);
+    //public $actsAs=array('Acl'=>array('type'=>'requester'),'enabled'=>false);
     public $validate=array(
         'username' => array(
             'required' => array(
@@ -60,6 +60,9 @@ class User extends AppModel{
         }
         return array('Group'=>array('id'=>$groupId));
     }
+    public function bindNode($user) {
+    return array('model' => 'Group', 'foreign_key' => $user['User']['group_id']);
+}
 //    public function bindModel($user) {
 //        return array('model'=>'group','foreign_key'=>$user['User']['group_id']);
 //    }
